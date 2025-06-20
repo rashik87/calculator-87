@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS RASHIK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#4F46E5', // Indigo 600
+                light: '#6366F1',   // Indigo 500
+                dark: '#4338CA',    // Indigo 700
+              },
+              secondary: {
+                DEFAULT: '#10B981', // Emerald 500
+                light: '#34D399',   // Emerald 400
+                dark: '#059669',    // Emerald 600
+              },
+              accent: {
+                DEFAULT: '#F59E0B', // Amber 500
+                light: '#FBBF24',   // Amber 400
+                dark: '#D97706',    // Amber 600
+              },
+              background: '#111827', // Gray 900
+              card: '#1F2937',       // Gray 800
+              textBase: '#E5E7EB',   // Gray 200
+              textMuted: '#9CA3AF',  // Gray 400
+              textInput: '#D1D5DB',  // Gray 300 (for input text if needed)
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background text-textBase font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
